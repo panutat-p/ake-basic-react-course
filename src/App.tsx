@@ -1,10 +1,11 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
-import AppHeader from './components/AppHeader'
+import { useState } from 'react';
+import reactLogo from './assets/react.svg';
+import './App.css';
+import AppHeader from './components/AppHeader';
+import AppFooter from './components/AppFooter';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <div className="App">
@@ -17,7 +18,7 @@ function App() {
         </a>
       </div>
 
-        <AppHeader></AppHeader>
+      <AppHeader></AppHeader>
 
       <h1>Vite + React</h1>
       <div className="card">
@@ -31,8 +32,10 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+
+      <AppFooter></AppFooter>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
