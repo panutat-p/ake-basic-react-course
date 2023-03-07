@@ -18,11 +18,7 @@ function App() {
         </a>
       </div>
 
-      {true && (
-        <img src="https://placehold.jp/f0c975/ffffff/600x150.png" alt="" />
-      )}
-
-      <AppHeader title={'🦊'} year={2022}></AppHeader>
+      <AppHeader title={'Welcome to'} year={2023}></AppHeader>
 
       <h1>Vite + React</h1>
       <div className="card">

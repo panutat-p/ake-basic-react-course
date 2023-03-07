@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 type info = {
   title: string;
@@ -7,19 +7,26 @@ type info = {
 };
 
 function AppHeader({ title, year, message }: info) {
-  function showAlert() {
-    alert('You clicked a button');
+  const [isShow, setIsShow] = useState(false);
+
+  useEffect(() => {
+    console.log('useEffect called');
+  }, [isShow]);
+
+  function display() {
+    setIsShow(!isShow);
   }
 
   return (
     <>
-      <div>
-        <button onClick={showAlert}>Click Me</button>
-      </div>
-      <h1>
+      <h1 onMouseOver={display}>
         {title} {year} {message}
       </h1>
-      ;
+      {isShow && (
+        <h3>
+          <img src="https://placehold.jp/f0c975/ffffff/400x100.png" alt="" />
+        </h3>
+      )}
     </>
   );
 }
