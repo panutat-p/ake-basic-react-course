@@ -18,6 +18,10 @@ function App() {
         </a>
       </div>
 
+      {true && (
+        <img src="https://placehold.jp/f0c975/ffffff/600x150.png" alt="" />
+      )}
+
       <AppHeader></AppHeader>
 
       <h1>Vite + React</h1>
