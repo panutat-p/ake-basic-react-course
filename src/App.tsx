@@ -22,7 +22,7 @@ function App() {
         <img src="https://placehold.jp/f0c975/ffffff/600x150.png" alt="" />
       )}
 
-      <AppHeader></AppHeader>
+      <AppHeader title={'🦊'} year={2022}></AppHeader>
 
       <h1>Vite + React</h1>
       <div className="card">

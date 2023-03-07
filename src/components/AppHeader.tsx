@@ -1,6 +1,12 @@
 import React from 'react';
 
-function AppHeader() {
+type info = {
+  title: string;
+  year: number;
+  message?: string;
+};
+
+function AppHeader({ title, year, message }: info) {
   function showAlert() {
     alert('You clicked a button');
   }
@@ -10,7 +16,10 @@ function AppHeader() {
       <div>
         <button onClick={showAlert}>Click Me</button>
       </div>
-      <h1>Hello 😁</h1>;
+      <h1>
+        {title} {year} {message}
+      </h1>
+      ;
     </>
   );
 }
